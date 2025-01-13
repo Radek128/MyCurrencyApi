@@ -24,6 +24,6 @@ Aby uruchomić aplikację z poziomu terminala, wykonaj następujące kroki:
 2. Przejdź do katalogu, w którym znajduje się plik projektu.
 3. Wpisz polecenie dotnet run.
 
-przykład zapytania: "http://localhost:5291/api/CurrencyRates?currencyCode=USD&dateTime=2024-12-30"
+przykład zapytania: "http://localhost:5291/api/CurrencyRates?currencyCode=USD&dateTime=2024-12-10"
 
 
