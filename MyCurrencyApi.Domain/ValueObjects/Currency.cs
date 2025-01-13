@@ -1,6 +1,6 @@
 ﻿namespace MyCurrencyApi.Domain.ValueObjects
 {
-    public record Currency
+    public abstract record Currency
     {
         public string Code { get; }
         public string Name { get; }
@@ -11,7 +11,7 @@
             Code = code ?? throw new ArgumentNullException(nameof(code));
             Name = name ?? throw new ArgumentNullException(nameof(name));
         }
-
+        
         public static Currency FromCode(string code)
         {
             if (Currencies.TryGetValue(code.ToUpper(), out var currency))
